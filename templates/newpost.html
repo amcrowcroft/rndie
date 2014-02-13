@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="/static/rndie.css" />
+    <title> rabbits never die ||</title>
+  </head>
+  
+  <body>
+    <a class="astyle1" href="/blog"> rabbits never die ||</a>
+    
+    <br>
+    <br>
+    <br>
+    
+    <form method="post">     <!--no action att. as are submitting to ourselves-->
+      <label>
+        <div class="header">title</div>
+        <input type="text" name="subject" value="{{outtitle}}">
+      </label>
+      
+      <label>
+        <div class="header">blog</div>
+        <textarea name="content">{{outblog}}</textarea>
+      </label>
+      
+      <br>
+      <input type="submit" value="transmit">
+      <br>
+        
+      <div class"error">{{user_error}}</div>
+    </form>
+
+    <hr>
+
+    
+  </body>
+</html>

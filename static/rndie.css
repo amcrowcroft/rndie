@@ -1,0 +1,81 @@
+    body  {
+      font-family: verdana, sans-serif;
+      width: 400px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+
+         
+    .astyle1    {
+      font-size: 30px;
+      width: 420;
+      float: right;
+      color: #B22222;
+      text-decoration:none;
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    .header {
+      text-align: right;
+      color: #B22222;
+      padding: 10px;
+    }
+    
+    .error {
+      color: red;
+      text-align: right;
+    }
+    
+    label {
+      display: block;
+      font-size: 20px;
+    }
+    
+    input[type=text] {
+      width: 400px;
+      font-size: 20px;
+      padding: 2px;
+    }
+    
+    textarea {
+      width: 400px;
+      height: 400px;
+      font-size: 17px;
+      font-family: monospace;
+    }
+    
+    input[type=submit] {
+      float: right;
+      font-size: 20px;
+      border-radius: 50px;
+      color: #B22222;
+      border: 0 none;
+      background: 0 none;
+    }
+    
+    hr {
+      margin: 20px auto;
+    }
+    
+    .blog + .blog {
+      margin-top: 20px;
+    }
+    
+    .blog-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    
+    .blog-body {
+      margin: 0;
+      font-size: 17px;
+      width: 400px;
+      word-wrap: break-word;  
+    }
+
+    .morebutton {
+      font-size: 10px;
+      color: #B22222;
+    }

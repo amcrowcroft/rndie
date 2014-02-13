@@ -1,0 +1,27 @@
+<html>
+  
+  <head>
+    <link type="text/css" rel="stylesheet" href="/static/rndie.css" />
+    <title>rabbits never die ||</title>
+  </head>
+  
+  <body>
+    
+  <a class="astyle1" href="/blog"> rabbits never die ||</a>
+  
+  <br>
+  <br>
+  <br>
+  
+    {% for blog in blogs %}
+      <div class="blog">
+        <div class="blog-title">{{blog.subject}}</div>
+        <p class="morebutton">read more</p>
+        <p class="blog-body">{{blog.content}}</p>
+      </div>
+    {% endfor %}
+    
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="/static/application.js"></script>  
+  </body>
+</html>
