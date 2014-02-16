@@ -5,16 +5,13 @@
       padding: 10px;
     }
 
-
          
     .astyle1    {
-      font-size: 30px;
-      width: 420;
-      float: right;
+      text-align: right;
+      font-size: 40px;
       color: #B22222;
       text-decoration:none;
-      margin: 0px;
-      padding: 0px;
+      float: right;
     }
     
     .header {
@@ -64,18 +61,21 @@
     }
     
     .blog-title {
-      font-weight: bold;
+      text-align: right;
       font-size: 20px;
+      text-transform: uppercase;
     }
     
     .blog-body {
+      text-align: left;
       margin: 0;
-      font-size: 17px;
+      font-size: 15px;
       width: 400px;
       word-wrap: break-word;  
     }
 
     .morebutton {
+      text-align: right;
       font-size: 10px;
       color: #B22222;
     }

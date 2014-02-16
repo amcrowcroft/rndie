@@ -8,5 +8,7 @@ $(document).ready(function(){
     $(".morebutton").click(function(){
       $(this).next(".blog-body").slideToggle("fast");
       });
+ 
+
 
 });
