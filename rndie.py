@@ -17,11 +17,11 @@ jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), a
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MAIN HANDLER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
-class Handler(webapp2.RequestHandler):
+class Handler(webapp2.RequestHandler):    #request handler - deals with the request coming in from the browser 
     def write(self, *a, **kw):              #write to browser.*a means this function can take any number of arguments 
       self.response.out.write(*a, **kw)
       
-    def render_str(self, template, **params):      #retrieve template 
+    def render_str(self, template, **params):      #retrieve template using jinja that uses os for path
       t = jinja_env.get_template(template)
       return t.render(params)
     
@@ -34,6 +34,7 @@ class Handler(webapp2.RequestHandler):
       self.response.out.write(json_txt)
       
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>PARENT BLOG KEY <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
 #for the future, future blogs with different names 
       
 def blog_key(name = 'default'):
