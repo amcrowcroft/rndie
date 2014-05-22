@@ -18,7 +18,7 @@
 
     {% for blog in blogs %}
       <div class="blog">
-        <div class="blog-title">{{blog.subject}}</div>
+        <a class="blog-title" href="/blog/{{blog.key().id()}}">{{blog.subject}}</a>
         <p class="morebutton">read more</p>
         <p class="blog-body">{{blog.content}}</p>
         <hr>
